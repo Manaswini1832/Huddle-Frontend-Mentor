@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*Landing Section*/
+.landing-div {
+  width: 100vw;
+  background-image: url("./images/bg-hero-desktop.svg");
+  background-color: #edfbfe;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3vh;
+}
+
+.main {
+  width: 100vw;
+  display: flex;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 20vw 25vw 25vw 20vw;
+  padding: 5vw 8vh;
+}
+.logo {
+  width: 100%;
+  padding-top: 1vh;
+}
+
+.nav-btn {
+  width: 60%;
+  align-self: center;
+  justify-self: end;
+  grid-area: 1/4;
+  background-color: #fff;
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 700;
+  border-style: none;
+  box-shadow: 0 2px 5px 2px #e0ebee;
+  border-radius: 20px;
+  padding: 2vh 0.6vw;
+  font-size: 14px;
+}
+
+.landing-text {
+  width: 50vw;
+  padding: 8vh 5.5vw 4.3vh 5.5vw;
+}
+
+.landing-head {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.landing-para {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.landing-pink-btn {
+  background-color: #fe52c0;
+  color: #fff;
+  font-family: "Open Sans", "sans-serif";
+  padding: 2vh 5vw;
+  border-radius: 30px;
+  border-style: none;
+  margin-top: 5vh;
+}
+
+.landing-img-div {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-img {
+  width: 85%;
+}
+
+@media only screen and (max-width: 425px) {
+  .landing-div {
+    background-image: url("./images/bg-hero-mobile.svg");
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 20vw 27vw 7vw 40vw;
+    padding: 5vw 3vh 1vw 3vh;
+  }
+
+  .nav-btn,
+  .logo {
+    align-self: center;
+    justify-self: center;
+  }
+  .nav-btn {
+    width: 80%;
+    font-size: 10px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-text,
+  .landing-img-div {
+    width: 100vw;
+  }
+
+  .landing-text {
+    text-align: center;
+    padding: 10.53vh 7vw 4.3vh 7vw;
+  }
+
+  .landing-head {
+    padding-bottom: 2vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .landing-head {
+    font-size: 30px;
+  }
+  .landing-para {
+    font-size: 20px;
+  }
+}
