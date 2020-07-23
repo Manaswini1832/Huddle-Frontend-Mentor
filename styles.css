@@ -25,7 +25,7 @@ body {
 
 .navbar {
   display: grid;
-  grid-template-columns: 20vw 25vw 25vw 20vw;
+  grid-template-columns: 20vw 25vw 18vw 27vw;
   padding: 5vw 8vh;
 }
 .logo {
@@ -84,6 +84,97 @@ body {
   width: 85%;
 }
 
+/*Features section*/
+#features-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0 18vh 0;
+  position: relative;
+}
+
+.feature {
+  display: flex;
+  width: 90vw;
+  box-shadow: 0 2px 5px 2px #e0ebee;
+  border-radius: 3vw;
+  padding: 8vh 0;
+}
+
+.f1 {
+  margin: 5vh 0 3vh 0;
+}
+
+.f2 {
+  margin: 3vh 0 3vh 0;
+}
+
+.f3 {
+  margin: 3vh 0 5vh 0;
+}
+
+.feature-img-div,
+.feature-text {
+  width: 50%;
+}
+
+.feature-img-div,
+.ft1,
+.ft3 {
+  padding: 0 5vw;
+}
+
+.ft2 {
+  padding-left: 6vw;
+  padding-right: 3vw;
+}
+
+.feature-img {
+  width: 80%;
+}
+
+.fid1,
+.fid3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-text h2 {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+}
+
+.feature-text p {
+  font-family: "Open Sans", "sans-serif";
+  color: #868789;
+}
+
+.feature-last {
+  position: absolute;
+  bottom: -10vh;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px #e0ebee;
+  padding: 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vw;
+}
+
+.feature-last h2 {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 425px) {
   .landing-div {
     background-image: url("./images/bg-hero-mobile.svg");
@@ -123,6 +214,59 @@ body {
   .landing-head {
     padding-bottom: 2vh;
   }
+
+  .f1,
+  .f2,
+  .f3 {
+    width: 90vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .f1,
+  .f3 {
+    flex-direction: column-reverse;
+  }
+
+  .feature-text,
+  .feature-img {
+    padding: 0;
+  }
+
+  .feature-text {
+    width: 95%;
+    padding: 1vw;
+  }
+
+  .feature-img-div {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .feature-img-div {
+    padding: 3vh 0 8vh 0;
+  }
+
+  .feature-text p {
+    padding: 3vw 10vw;
+  }
+
+  .feature-last {
+    position: absolute;
+    bottom: -25vh;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px #e0ebee;
+    padding: 5vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vw;
+    text-align: center;
+    margin: 5vw;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -132,4 +276,10 @@ body {
   .landing-para {
     font-size: 20px;
   }
+}
+
+.contact-div {
+  width: 100vw;
+  height: 30vh;
+  background-color: #00252e;
 }
